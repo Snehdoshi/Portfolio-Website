@@ -1,4 +1,5 @@
 import React from 'react'
+import SkillCard from './SkillCard'
 
 
 const skillItem = [
@@ -57,10 +58,16 @@ const Skill = () => {
           Here are some of the essential tools I use in my projects:
         </p>
 
-        <div className="">
+        <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]
+">
           {
             skillItem.map(({imgSrc , label , desc} , key) => (
-              <SkillCard/>
+              <SkillCard 
+              key={key}
+              imgSrc={imgSrc}
+              label={label}   
+              desc={desc}
+              />
             ))
           }
         </div>
