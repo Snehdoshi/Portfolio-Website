@@ -4,44 +4,24 @@ import SkillCard from './SkillCard'
 
 const skillItem = [
   {
-    imgSrc: '/images/figma.svg',
-    label: 'Figma',
-    desc: 'Design tool'
+    imgSrc: '/images/DaVinci_Resolve_Studio.svg',
+    label: 'Davinci Resolve',
+    desc: ' Motion Graphics, Color Grading and Simple VFX'
   },
   {
-    imgSrc: '/images/css3.svg',
-    label: 'CSS',
-    desc: 'User Interface'
+    imgSrc: '/images/Adobe Premeire Pro.svg',
+    label: 'Adobe Premiere Pro',
+    desc: 'Sound Design , Pacing and Mood Setting'
   },
   {
-    imgSrc: '/images/javascript.svg',
-    label: 'JavaScript',
-    desc: 'Interaction'
+    imgSrc: '/images/adobe-photoshop-icon.svg',
+    label: 'Adobe Photoshop',
+    desc: 'Photo Editing'
   },
   {
-    imgSrc: '/images/nodejs.svg',
-    label: 'NodeJS',
-    desc: 'Web Server'
-  },
-  {
-    imgSrc: '/images/expressjs.svg',
-    label: 'ExpressJS',
-    desc: 'Node Framework'
-  },
-  {
-    imgSrc: '/images/mongodb.svg',
-    label: 'MongoDB',
-    desc: 'Database'
-  },
-  {
-    imgSrc: '/images/react.svg',
-    label: 'React',
-    desc: 'Framework'
-  },
-  {
-    imgSrc: '/images/tailwindcss.svg',
-    label: 'TailwindCSS',
-    desc: 'User Interface'
+    imgSrc: '/images/Adobe After Effects.svg',
+    label: 'Adobe After Effects',
+    desc: 'Motion Graphics'
   },
 ]
 
@@ -58,7 +38,7 @@ const Skill = () => {
           Here are some of the essential tools I use in my projects:
         </p>
 
-        <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]
+        <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(250px,1fr)) ]
 ">
           {
             skillItem.map(({imgSrc , label , desc} , key) => (
