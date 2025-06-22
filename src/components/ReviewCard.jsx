@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const ratings = new Array(5);
 ratings.fill({
   icon: 'star',
-  style: {fontVariationSettings: '"FILL" 1'}
+  style: { fontVariationSettings: '"FILL" 1'}
 });
 
 
@@ -24,8 +24,7 @@ const ReviewCard = ({
           <span 
           key={key}
           className="material-symbols-rounded text-yellow-300 text-[18px]"
-          style={style}
-          >
+          style={style}>
             {icon}
           </span>
         ))}
