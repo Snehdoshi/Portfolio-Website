@@ -52,17 +52,77 @@ const Footer = () => {
   return (
     <footer className="section">
       <div className="container">
-        
-        <div className="">
-          <div className="">
-            <h2 className="headline-1">
+
+        <div className="lg:grid lg:grid-cols-2">
+          <div className="mb-10">
+            <h2 className="headline-1 mb-8 lg: max-w-[12ch]">
               Let&apos;s work together today!
             </h2>
             <ButtonPrimary 
-            href="Mailto: premhemal05@gmail.com"
+            href="Mail to: premhemal05@gmail.com"
             label="Start Project"
             icon="chevron_right" />
           </div>
+
+          <div className="">
+
+
+            <div>
+              <p className="">Sitemap</p>
+              <ul>
+                {sitemap.map(({label , href} , key) => (
+                  <li key={key}>
+                    <a 
+                    href={href} 
+                    className="">
+                      {label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <p className="">Socials</p>
+              <ul>
+                {socials.map(({label , href} , key) => (
+                  <li key={key}>
+                    <a 
+                    href={href} 
+                    target='_blank'
+                    className="">
+                      {label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          
+          </div>
+
+          <div className="">
+
+                <a 
+                href="" 
+                className="">
+
+                  <img 
+                src="/images/logo.svg"
+                width={40}
+                height={40} 
+                alt="Logo" 
+                className="" 
+                />
+                </a>
+
+                <p className="">
+                  &copy; 2025 <span className="">Prem Bhimani</span>
+                </p>
+                
+
+          </div>
+
+          
         </div>
       </div>
     </footer>
